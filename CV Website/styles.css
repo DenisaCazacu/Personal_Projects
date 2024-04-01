@@ -1,0 +1,229 @@
+/*My app*/
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: #F6F6FA;
+}
+.app-wrapper{
+    display:flex; 
+    flex-direction: row-reverse;
+    width: 1200px;
+    margin: 40px auto;
+    background-color: #ffff;
+}
+/* Sidebar Styles*/
+.sidebar-section{
+    background-color: #DFEEFF;
+}
+.contacts-container{
+    padding-left: 40px;
+}
+.contacts-header{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    }
+.contacts-elements{
+    margin-top: -12px;
+}
+.contacts-items{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.contacts-phone{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.contacts-mail{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 10px;
+}
+.tech-container{
+    padding-left: 40px;
+    margin-top: 40px;
+}
+.tech-header{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.tech-list{
+    margin-top: -10px;
+    margin-left: -10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.soft-container{
+    padding-left: 40px;
+    margin-top: 80px;
+}
+.soft-header{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.soft-list{
+    margin-top: -10px;
+    margin-left: -10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+/* main content Styles*/
+.right-side-container{
+    padding-left: 88px;
+    padding-top: 80px;
+    padding-right: 40px;
+    padding-bottom: 180px;
+}
+.profession{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+.name{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 55px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: -10px;
+}
+.about-me-details{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #595959;
+    margin-top: -15px;;
+
+}
+.projects-section{
+    margin-top: 40px;
+}
+.projects-header{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.projects-list{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-style: normal;
+    margin-left: -20px;
+    margin-top: -10px;
+}
+.projects-info{
+    font-weight: 400;
+    color: #595959;
+}
+.work-section{
+    margin-top: 40px;
+}
+.work-header{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.job-name{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: -10px;
+}
+.blue-font{
+    color: #6096FF;
+    margin-left: 20px;
+}
+.company-time{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #A8A8A8;
+    margin-top: -10px;
+}
+.job-list{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #595959;
+    margin-left: -15px;
+    margin-top: -5px;
+}
+.education-section{
+    margin-top: 40px;
+}
+.education-header{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+}
+.school{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #6096FF;
+    margin-top: -5px;
+}
+.speciality{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    margin-top: -10px;   
+}
+.education-time{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    color: #A8A8A8;
+    margin-top: -10px;
+}
+.side-bar-image{
+    margin-top: 40px;
+}
