@@ -1,0 +1,35 @@
+CUM FUNCTIONEAZA
+->Un bloc se selecteaza cand se apasa dublu click
+->Un bloc se plaseaza pe ecran apasand dublu click, doar daca este amplasat in spatiul de lucru
+->Pentru a sterge un bloc, se apasa dublu click pe butonul de stergere, apoi dublu click pe blocul dorit
+->Pentru a iesi din modul de stergere, se da dublu click pe butonul de golire
+->Blocurile se pot muta folosind drag and drop
+->Legaturile se duc prin drag and drop, de la un cerculet la altul
+
+CONDITII CA SCHEMA SA FIE VALIDA
+ ->Trebuie sa existe un bloc de start
+ ->Fiecare bloc trebuie sa aiba legaturi catre alte blocuri
+ Blocul de INTRARE :
+  ->Numele unei variabile poate fi alcatuit doar din litere
+  ->Nu pot exista 2 variabile cu acelasi nume
+ Blocul de IESIRE :
+  ->Trebuie sa contina un nume de variabila care este deja declarata
+ Blocul de CONDITIE :
+  ->Expresia trebuie sa fie de tipul VARIABILA (semn) OPERAND1 (operator) OPERAND2
+  ->Variabila trebuie sa fie declarata anterior
+  ->Cei doi operanzi pot fi numere reale, sau variabile declarate anterior
+  ->Operandul 2 poate lipsi
+  ->Semnul poate fi =, <, >, <= sau >=
+  ->Operatorul poate fi +, -, *, / , ^
+  ->In cazul in care expresia este adevarata, programul va continua cu blocul din stanga
+  ->In caz contrar, programul va continua cu blocul din dreapta
+  ->Poate fi folosit si pentru a implementa structuri repetitive, cu test initial sau final
+ Blocul de CALCUL
+  -> Expresia trebuie sa fie de tipul VARIABILA = OPERAND1 (operator) OPERAND2
+  ->Spre deosebire de blocul de conditie, in cazul in care variabila nu este declarata anterior, se considera
+    ca o noua declaratie si in acelasi timp, initializare
+  ->Cei doi operanzi pot fi numere reale, sau variabile declarate anterior
+  ->Operandul 2 poate lipsi
+  ->Semnul poate fi =, <, >, <= sau >=
+  ->Operatorul poate fi +, -, *, / , ^
+
