@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>StartBackground.png</file>
+        <file>ReadyBackground.png</file>
+        <file>QuestionBackground.png</file>
+        <file>GameOverBackground.png</file>
+    </qresource>
+</RCC>
