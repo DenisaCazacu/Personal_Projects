@@ -1,0 +1,76 @@
+.volunteering-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100vw;
+    background-color: rgb(23, 2, 37);
+    gap: 30px;
+    min-height: 100vh;
+}
+.volunteering-container{
+    display:grid;
+    width: 80%;
+    height: 100%;
+    gap: 15px;
+    grid-template-columns: 3fr 1fr; 
+    grid-template-rows:  100%;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.polaroid {
+    padding: 15px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+    margin: 20px auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid black;
+}
+.polaroid1{
+    width:25%;
+}
+.polaroid2{
+    width: 80%;
+}
+.orientation1{
+    transform: rotate(-4deg);
+}
+.orientation2{
+    transform: rotate(4deg);
+}
+.polaroid img {
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+}
+
+.polaroid:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+.logo{
+    width: 120px;
+}
+@media screen and (max-width: 900px) {
+    .volunteering-container{
+        display:flex;
+        flex-direction: column;
+    }
+    .polaroid2 {
+        width: 50%;
+    }
+}

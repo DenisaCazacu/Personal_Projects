@@ -1,0 +1,110 @@
+.hello-section{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+}
+.hello-section-container{
+    position: relative;
+    width: 65vw;
+    height: 70vh;
+}
+.hello-card-image{
+    width:100%;
+    height:100%;
+    border-radius: 14px;
+    opacity: 50%;
+    box-shadow: 5px 5px 35px 5px hsl(281, 74%, 25%);
+    z-index: 1;
+    position: absolute;
+}
+.text-and-image{
+    height:100%;
+    z-index:2;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.profile-image{
+    width: 110%;
+    height: 110%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+
+}
+.circular-container {
+    min-width: 140px; 
+    min-height: 140px;
+    max-width: 140px;
+    max-height: 140px;
+    width: 140px; 
+    height: 140px;
+    aspect-ratio: 1 / 1;
+    border: 2px solid white; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width:100%;
+}
+.msg1{
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: 'Lexend Giga', serif;
+    color: white;
+}
+.msg2{
+    font-family: "Gwendolyn", serif;
+    font-size: 8rem;
+    color: white;
+    opacity: 100%;
+    margin-top: -25px;
+    margin-bottom: 0;
+
+}
+.msg3{
+    font-family: 'Lexend Giga', serif;
+    font-size: 1.2rem;
+    margin-top: -10px;
+    color: white;
+    text-align: center;
+    overflow: hidden; 
+    border-right: 3px solid white;
+    width: 0;
+    animation: typing 2s steps(15) forwards, blink 0.7s infinite;
+    text-wrap: nowrap;
+}
+@media screen and (max-width: 900px) {
+    .msg1{
+        font-size: 1.5rem;
+    }
+    .msg2{
+        font-size: 4rem;
+    }
+    .msg3{
+        font-size: 0.7rem;
+    }
+    .circular-container{
+        width: 140px;
+        height: 140px;
+    }
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}

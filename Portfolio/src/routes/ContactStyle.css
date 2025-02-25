@@ -1,0 +1,12 @@
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(23, 2, 37);
+    height:100%;
+    gap:20px;
+    width: 100%;
+    min-width: 100vw;
+}

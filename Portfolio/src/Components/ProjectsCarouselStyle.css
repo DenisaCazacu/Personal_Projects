@@ -1,0 +1,184 @@
+/* From Uiverse.io by csozidev */ 
+/* glowing hover card made by: csozi | Website: english.csozi.hu*/
+
+.card {
+    position: relative;
+    width: 12%;
+    height: 30vh;
+    background: rgb(255, 0, 179);
+    background: linear-gradient(137deg, rgb(255, 0, 179) 0%, rgba(0,212,255,1) 100%);
+    border-radius: 30px;
+    filter: drop-shadow(0px 0px 20px rgba(209, 38, 197, 0.5));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    opacity:0.7;
+    padding: 5px;
+}
+  
+.card::after {
+    content: '';
+    background-color: #181818;
+    position: absolute;
+    z-index: -1;
+    transition: 0.3s ease;
+    height: 98%;
+    width: 98%;
+    top: 1%;
+    left: 1%;
+    border-radius: 28px;
+}
+  
+.card:hover {
+    filter: drop-shadow(0px 0px 30px rgba(209, 38, 197, 1));
+}
+
+.card h2{
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px ;
+}
+.card p {
+  overflow: hidden;
+  display: flex;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  color: rgb(203, 153, 203);
+  font-weight: 300;
+  margin-top: 0px ;
+}
+.card .central p {
+  overflow: visible;
+}
+.card .button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #9b00ff, #ff00ff);
+  padding: 7px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(155, 0, 255, 0.5);
+  color: white;
+  width: 60%;
+  font-size: 0.8rem;;
+  margin-bottom: 5px;
+}
+.card .button:hover {
+  background: linear-gradient(135deg, #7a00cc, #cc00cc);
+  box-shadow: 0 8px 20px rgba(155, 0, 255, 0.7);
+  transform: scale(1.05);
+}
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100vw;
+    height: 80vh;
+    padding: 20px;
+}
+  
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 90%;
+}
+  
+.card.center {
+    transform: scale(1.7);
+    opacity: 1;
+    height: auto;
+    min-height: 30vh;
+}
+  
+.card img {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
+.projects-button {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background: linear-gradient(130deg, #9b00ff, #ff00ff);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(155, 0, 255, 0.5);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+  
+.projects-button:hover {
+    background: linear-gradient(135deg, #7a00cc, #cc00cc);
+    box-shadow: 0 8px 20px rgba(155, 0, 255, 0.7);
+    transform: scale(1.05);
+}
+.active-modal{
+  overflow-y: hidden;
+}
+.modal .overlay{
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(49,49,49,0.8);
+  z-index: 9;
+}
+.modal-content {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f1f1f1;
+  border-radius: 3px;
+  width: 60%;
+}
+.modal-content video{
+  width: 100%;
+  height: auto;
+}
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .carousel-container{
+    height:100%;
+  }
+  .carousel {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 10px;
+      width: 80%;
+      height: 100%;
+  }
+  .card {
+    display: none;
+  }
+  .card.center {
+    opacity: 1;
+    height: auto;
+    min-height: none;
+    display: flex;
+    width: 30%;
+  }
+  .modal-content{
+    width: 70%;
+  }
+}

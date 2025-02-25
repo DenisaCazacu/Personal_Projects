@@ -1,0 +1,148 @@
+.about-me-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100vw;
+    background-color: rgb(23, 2, 37);
+    gap: 30px;
+    min-height: 100vh;
+}
+.about-me-container{
+    display:grid;
+    width: 80%;
+    height: 100%;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows:  60% 40%;
+    grid-template-areas: "education education hard-skills"
+                         "interests interests soft-skills";
+}
+
+.education{
+    grid-area: education;
+}
+.soft-skills{
+    grid-area: soft-skills;
+}
+.hard-skills{
+    grid-area: hard-skills;
+}
+.interests{
+    grid-area: interests;
+}
+.interests-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width:100%;
+}
+.interest{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.interest .illustration{
+    width:50%;
+}
+.interest p{
+    font-family: 'Outfit', serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: rgb(197, 125, 197);
+}
+.section-title{
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    text-wrap: wrap;
+    align-items: center;
+    padding: 10px 15px;
+    font-weight: 500;
+    color: white;
+    background: rgba(33,19,52,255);
+    position: relative;
+    justify-content: center;
+    font-family: 'Lexend Giga', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-shadow: 3px 0px 10px white;
+    max-width: 50%;
+
+}
+.section-title::before {
+    border-radius: 20px;;
+    content:"";
+    position: absolute;
+    width: 105%;
+    height: 120%;
+    background: linear-gradient(315deg,#03a9f4,#ff0058);
+    z-index: -1;
+}
+.box{
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(33,19,52,255);
+    z-index: 1;
+    box-shadow: 0 -5px 50px rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    position:relative;
+}
+.box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 0, 255, 0.3), transparent);
+    filter: blur(50px);
+    z-index: -1;
+    bottom: -20px;
+}
+.paragraph-text{
+    font-family: 'Outfit', serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgb(203, 153, 203);
+    margin-bottom: 0;
+    margin-top:0;
+    position: relative;
+}
+.paragraph-text ul{
+    list-style-type: circle;
+}
+.paragraph-text-2{
+    font-family: 'Outfit', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(197, 125, 197);
+    text-align: center;
+}
+.illustration {
+    width: 25%;
+}
+.education .illustration{
+    position: absolute;
+    width: 35%;
+    bottom:0;
+    right: 0;
+}
+.soft-skills .illustration{
+    position: absolute;
+    width: 35%;
+    bottom:2%;
+    right: 5%;
+}
+@media screen and (max-width: 900px) {
+    .about-me-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .soft-skills .illustration{
+        width: 25%;
+    }
+}
